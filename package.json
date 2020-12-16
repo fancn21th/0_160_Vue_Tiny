@@ -1,29 +1,24 @@
 {
-  "name": "dc-components",
-  "version": "1.0.0",
+  "name": "@fancn21th/dc-components",
+  "version": "0.0.1",
   "description": "",
-
   "main": "dist/dc-components.ssr.js",
   "browser": "dist/dc-components.esm.js",
   "module": "dist/dc-components.esm.js",
   "unpkg": "dist/dc-components.min.js",
-
   "files": [
     "dist/*",
     "src/**/*.vue"
   ],
-
   "scripts": {
     "serve": "vue-cli-service serve dev/serve.js",
     "build": "cross-env NODE_ENV=production rollup --config build/rollup.config.js",
     "build:ssr": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format cjs",
     "build:es": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format es",
-    "build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife"
+    "build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife",
+    "publish": "npm publish --access=public"
   },
-
-  "dependencies": {
-  },
-
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.5",
